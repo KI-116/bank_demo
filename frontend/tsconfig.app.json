@@ -1,0 +1,16 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "src/**/*.js",
+              "src/views/Branch.vue","src/views/Account.vue","src/views/Customer.vue",
+            "src/views/Loans.vue"],
+  "exclude": ["src/**/__tests__/*", "build/**/*"],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "allowJs": true,
+    "outDir": "build"
+  }
+}
